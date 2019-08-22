@@ -1,0 +1,12 @@
+public class TempConverter {
+    public static void main(String args[]) {
+        final int Base = 32;
+        final double Conversion_factor = 9.0 / 5.0;
+        int celsiusTemp = 24; // convert this value
+        double FahrenheitTemp;
+        FahrenheitTemp = celsiusTemp * Conversion_factor + Base;
+
+      System.out.println("Celsius Temperature: " + celsiusTemp);
+      System.out.println("Fahrenheit Temperature: " + FahrenheitTemp);
+    }
+}
