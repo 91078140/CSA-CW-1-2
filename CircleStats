@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+//Takes the radius of a circle and finds its circumfrance and area
+public class CircleStats 
+{
+    public static void main(String args[]) 
+    {
+        //Intance Variables
+      int radius;
+      double area, circumference;
+      Scanner scan = new Scanner(System.in);
+      
+      //get user input
+      System.out.println("Enter the circle's radius: ");
+      radius = scan.nextInt();
+      
+      //calculate area and circumferance
+      area = Math.PI * Math.pow(radius, 2);
+      circumference = 2 * Math.PI * radius;
+      
+      // round the output to the three decimals palce
+      DecimalFormat fmt = new DecimalFormat("0.###");
+      
+      // Output resalts with labels
+      System.out.println("The circle's area: " + fmt.format(area));
+      System.out.println("The circle's circumference: " + fmt.format(circumference));
+    }// end of main method
+}// end of class circlestats
